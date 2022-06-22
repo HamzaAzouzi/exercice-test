@@ -1,0 +1,140 @@
+  
+  /**/
+  *{
+    font-size:small; 
+   }
+ 
+   /*table users*/
+   table{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    width: 80%; 
+    border-collapse: collapse;
+    box-shadow: 0 0 4px rgba(107, 104, 104, 0.7);
+    border-radius: 8px 8px 6px 6px;
+   
+   }
+   td , th{
+    padding: 15px 20px;
+    text-align: center;
+   }
+   th{
+   width: 15%;
+   
+   }
+   tr{
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid #e7e7f0;
+   }
+
+ 
+   /*icon supprimer user*/
+   #icontrash{
+       width: 50%;
+   }
+
+   /*style div de button ajouter user*/
+   .divjouter{
+    height: 60px;
+    margin-top: 30%;
+    margin-left: 130px;
+    width: 81%; 
+    box-shadow: 0 0 4px rgba(107, 104, 104, 0.7);
+    border-radius: 8px 8px 6px 6px;
+  
+   }
+
+   /*style button ajouter user*/
+   .btnajouter{
+    border: none;
+    background-color: #FFAA0A;
+    color:#887249;
+    height: 35px;
+    width: 175px;
+    border-radius: 6px;
+    margin-top: 1%;
+    margin-left: 83%;
+    cursor: pointer;
+   }
+
+  /*style span status de la table user*/
+  .spanstatus{
+    border-radius: 5px;
+    color: #FFFFFF;
+    padding: 5px 10px;
+  }
+
+  /* display non pour modale */
+.invisible {
+  display: none;
+  backdrop-filter: blur(10px);
+}
+
+/* blur background pour modale */
+.blur {
+  filter: blur(10px);
+}
+
+/* style de modal  */
+.div {
+  margin: 0 10vw;
+  padding: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: fixed;
+  top: 15%;
+  background-color: white;
+  width: 75%;
+  border-radius: 10px;
+  border-radius: 13px;
+  color:#BEBEBE;
+}
+
+.div input,select{
+  width: 20vw;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid 1px rgb(224, 224, 224);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.div1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+.div2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 7vw;
+  width: 100%;
+  padding: 10px 0;
+}
+.btnenregistrer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+.btnenregistrer button {
+  background-color: #fdb64d;
+  border-style: none;
+  padding: 13px 60px;
+  margin-right: 2vw;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px -2px rgba(75, 72, 72, 0.76);
+  color: rgb(71, 71, 71);
+  cursor: pointer;
+}
+
+/*titre modal ajouter utilisateur*/
+.titremodal{
+  color: #000000;
+  font-size: 40px;
+}
+

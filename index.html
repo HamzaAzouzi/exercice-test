@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    
+</head>
+<body>
+
+     
+  <section class="tableuser">
+    <table id="table">
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Date de création</th>
+                <th>Etat</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Nom d'utilisateur</th>
+                <th>Matricule</th>
+                <th>Action</th>
+               
+                </tr>
+        </thead>
+        
+        <tbody id="tableuser">
+
+        </tbody>
+      
+        </table>
+
+        <div class="divjouter">
+            <button class="btnajouter" onclick="afficher()">Ajouter utilisateur</button>
+        </div>
+</section>
+  
+
+  <section class="Modal">
+    <div id="div" class="invisible">
+      <div>
+        <h1 class="titremodal">Ajout d'utilisateurs</h1>
+      </div>
+      <div class="div1">
+        <div>
+          <label>Nom</label>
+          <div><input type="text"  id="nom" /></div>
+        </div>
+        <div>
+          <label>Prenom</label>
+          <div><input type="text"  id="prenom" /></div>
+        </div>
+        <div>
+          <label>Etat</label>
+          <div>
+            <select id="etat">
+              <option></option>
+              <option value="En validation">En validation</option>
+              <option value="Validé">Validé</option>
+              <option value="Rejeté">Rejeté</option>
+          </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="div2">
+        <div>
+          <label>Nom d'utilisatuer</label>
+          <div>
+            <input type="text"  id="nomu" />
+          </div>
+        </div>
+        <div>
+          <label>Date de creation</label>
+          <div><input type="date"  id="datec" /></div>
+        </div>
+      </div>
+      <div class="div2">
+        <div>
+          <label>Matricule</label>
+          <div><input type="text"  id="matricule" /></div>
+        </div>
+      </div>
+      <div class="btnenregistrer">
+        <button onclick="ajouter()">Enregistrer</button>
+      </div>
+    </div>
+  </section>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
